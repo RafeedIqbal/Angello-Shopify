@@ -3656,3 +3656,9 @@ details-disclosure>details {
   background-color: #FFFFFF;
   color: #000000;
 }
+
+/* Fragrance notes heading - green link */
+#shopify-section-rich_text_wDUgAa .rich-text__heading a,
+#shopify-section-rich_text_wDUgAa .rich-text__heading a:hover {
+  color: #2E7D32;
+}
