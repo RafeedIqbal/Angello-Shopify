@@ -45,11 +45,54 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "rich_text_QTb3t7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_nN7JNG": {
+          "type": "heading",
+          "settings": {
+            "heading": "FEATURED ON NBC GOLF CHANNEL",
+            "heading_size": "h1"
+          }
+        },
+        "text_fpcCpe": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_dYwGth": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nN7JNG",
+        "text_fpcCpe",
+        "button_dYwGth"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
     "video_Ed9Waw": {
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
@@ -58,6 +101,49 @@
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_wDUgAa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9h4rNB": {
+          "type": "heading",
+          "settings": {
+            "heading": "FRAGRANCE NOTES FOR <a href=\"https://www.angellofragrances.com/onthegreen\" target=\"_self\"><em>ON THE GREEN FOR MEN</em></a>",
+            "heading_size": "h1"
+          }
+        },
+        "text_YUkc8Q": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_kRNkaX": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9h4rNB",
+        "text_YUkc8Q",
+        "button_kRNkaX"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
       }
     },
     "image_banner_nfNcMF": {
@@ -208,7 +294,9 @@
   },
   "order": [
     "slideshow",
+    "rich_text_QTb3t7",
     "video_Ed9Waw",
+    "rich_text_wDUgAa",
     "image_banner_nfNcMF",
     "custom_liquid_wTaxwe",
     "multicolumn_3r4rc8",
