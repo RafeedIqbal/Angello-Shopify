@@ -16,18 +16,18 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/AngelloHeroImage.avif",
-            "image_overlay_opacity": 10,
-            "heading": "Browse our latest products",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "Shop all",
+            "image_overlay_opacity": 30,
+            "heading": "ANGELLO FRAGRANCES",
+            "heading_size": "h0",
+            "subheading": "SMELL FRESH, PLAY YOUR BEST",
+            "button_label": "SHOP NOW",
             "link": "shopify://collections/all",
-            "button_style_secondary": false,
-            "show_text_box": true,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "left",
-            "color_scheme": "scheme-2"
+            "button_style_secondary": true,
+            "show_text_box": false,
+            "box_align": "middle-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
           }
         }
       },
