@@ -87,13 +87,11 @@
     margin-top: auto;
     color: #008000;
     display: flex;
-    gap: 0.5rem;
-    transform: rotate(-5deg);
-    /* Slight rotation like in the design? Actually design curves them. Hard to do simple curve with flex. Just simple row for now. Actually, let's look closer. They are arranged in an arc. That's complex CSS. I'll stick to a straight line for MVP unless user complains, or maybe just flex with transform on each star? Let's keep it simple first: straight line. 
-  Wait, the design has them in an arc.
-  Let's try to simulate the arc simply by transforming individual stars? No, that's tedious.
-  I'll just do a straight row of stars for now.
-  */
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: flex-end;
+    height: 4rem;
+    padding-bottom: 1rem;
 }
 
 .satisfied-customers__rating .icon-star {
@@ -102,32 +100,25 @@
     fill: currentColor;
 }
 
-/* Slight arc attempt if easy?
-   Start 1: rotate(-10deg) translateY(5px)
-   Star 2: rotate(-5deg) translateY(2px)
-   Star 3: translateY(0)
-   Star 4: rotate(5deg) translateY(2px)
-   Star 5: rotate(10deg) translateY(5px)
-*/
-
+/* Arc effect: Middle star highest, outer stars lower and rotated */
 .satisfied-customers__rating .icon-star:nth-child(1) {
-    transform: rotate(-15deg) translateY(5px);
+    transform: translateY(8px) rotate(-15deg);
 }
 
 .satisfied-customers__rating .icon-star:nth-child(2) {
-    transform: rotate(-7deg) translateY(1px);
+    transform: translateY(2px) rotate(-8deg);
 }
 
 .satisfied-customers__rating .icon-star:nth-child(3) {
-    transform: translateY(-2px);
+    transform: translateY(0) rotate(0deg);
 }
 
 .satisfied-customers__rating .icon-star:nth-child(4) {
-    transform: rotate(7deg) translateY(1px);
+    transform: translateY(2px) rotate(8deg);
 }
 
 .satisfied-customers__rating .icon-star:nth-child(5) {
-    transform: rotate(15deg) translateY(5px);
+    transform: translateY(8px) rotate(15deg);
 }
 
 
@@ -137,16 +128,29 @@
 
 .satisfied-customers__footer .button {
     background-color: #008000;
-    border: none;
+    border: 1px solid black;
     color: white;
     border-radius: 0;
-    /* Square buttons? Design looks squareish/rectangular */
-    padding: 1.5rem 3rem;
+    /* Rectangular */
+    /* Pill shape */
+    padding: 1.5rem 4rem;
     font-size: 1.4rem;
     letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+}
+
+/* Target pseudo-element as well because Dawn uses it for outlines */
+.satisfied-customers__footer .button,
+.satisfied-customers__footer .button::after {
+    border-radius: 0;
+}
+
+.satisfied-customers__footer .button:hover::after {
+    box-shadow: 0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background)), 0 0 0 calc(var(--buttons-border-width) + 2px) rgb(var(--color-button-text)) !important;
 }
 
 .satisfied-customers__footer .button:hover {
     background-color: #006400;
     /* Darker green */
+    border-color: black;
 }
