@@ -2795,6 +2795,9 @@ details[open] > .header__submenu {
   padding: 1.2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
 }
 
 .header__menu-item:hover {
