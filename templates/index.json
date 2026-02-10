@@ -211,6 +211,43 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "satisfied_customers_LEqRW9": {
+      "type": "satisfied-customers",
+      "blocks": {
+        "review_G9FFFi": {
+          "type": "review",
+          "settings": {
+            "author": "Vince",
+            "text": "<p>One of my favorite colognes. I have many designer fragrances and On The Green is by far one of the best smelling fragrances I've bought in a long time! My wife absolutely loves how I smell, and she is very picky. hahaha. I highly recommend giving On The Green a shot for all occasions.</p>"
+          }
+        },
+        "review_3cEFJC": {
+          "type": "review",
+          "settings": {
+            "author": "Siobhan",
+            "text": "<p>I am a big fan of Angello Fragrances. The service is excellent! Fast shipping and the item is beautifully packaged. I am so happy with my purchase. I look forward to the next product that comes out from Angello. \"On the green\" is my everyday scent!</p>"
+          }
+        },
+        "review_eGf87z": {
+          "type": "review",
+          "settings": {
+            "author": "Jessica",
+            "text": "<p>Bright and citrusy, with a sparkling freshness that immediately uplifts the senses. I gave it to my brother as a gift and he loves it. It’s elegant, fresh and new. Great customer service and beautiful packaging.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "review_G9FFFi",
+        "review_3cEFJC",
+        "review_eGf87z"
+      ],
+      "name": "Satisfied Customers",
+      "settings": {
+        "heading": "SATISFIED CUSTOMERS",
+        "button_label": "LEAVE A REVIEW",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -219,6 +256,7 @@
     "video_Ed9Waw",
     "rich_text_wDUgAa",
     "image_banner_nfNcMF",
-    "hover_text_columns_6jpRwA"
+    "hover_text_columns_6jpRwA",
+    "satisfied_customers_LEqRW9"
   ]
 }
