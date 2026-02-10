@@ -14,7 +14,6 @@ This is a **Shopify Online Store 2.0** theme for **Angello Fragrances** (`angell
 | Templates    | JSON-based Online Store 2.0 templates (`.json`)            |
 | Styling      | Vanilla CSS (no preprocessor, no Tailwind)                 |
 | JavaScript   | Vanilla JS with Web Components (Custom Elements)           |
-| Fonts        | **Archivo** (headings, weight 700), **Questrial** (body)   |
 | Dev Server   | Shopify CLI (`shopify theme dev`)                          |
 | Version Ctrl | Git                                                        |
 
