@@ -120,10 +120,22 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                  <h3 class="inline-richtext">
+                    {{ block.settings.title }}
+                    {%- if block.settings.verified -%}
+                      <span class="verified-badge">{{ 'icon-checkmark.svg' | inline_asset_content }}</span>
+                    {%- endif -%}
+                  </h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
+                {%- endif -%}
+                {%- if block.settings.stars > 0 -%}
+                  <div class="rating-stars">
+                    {%- for i in (1..block.settings.stars) -%}
+                      <span class="rating-star">{{ 'icon-star.svg' | inline_asset_content }}</span>
+                    {%- endfor -%}
+                  </div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
@@ -236,7 +248,7 @@
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_image.content"
-    },    
+    },
     {
       "type": "select",
       "id": "image_width",
@@ -284,23 +296,23 @@
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_button.content"
-    },    
+    },
     {
       "type": "text",
       "id": "button_label",
       "default": "t:sections.multicolumn.settings.button_label.default",
-      "label": "t:sections.multicolumn.settings.button_label.label", 
+      "label": "t:sections.multicolumn.settings.button_label.label",
       "info": "t:sections.multicolumn.settings.button_label.info"
     },
     {
       "type": "url",
       "id": "button_link",
       "label": "t:sections.multicolumn.settings.button_link.label"
-    },    
+    },
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_layout.content"
-    },     
+    },
     {
       "type": "range",
       "id": "columns_desktop",
@@ -347,7 +359,7 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
-    },    
+    },
     {
       "type": "header",
       "content": "t:sections.multicolumn.settings.header_mobile.content"
@@ -431,6 +443,21 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "range",
+          "id": "stars",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "default": 0,
+          "label": "Stars"
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "default": false,
+          "label": "Verified Badge"
         }
       ]
     }
