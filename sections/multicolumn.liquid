@@ -120,22 +120,10 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">
-                    {{ block.settings.title }}
-                    {%- if block.settings.verified -%}
-                      <span class="verified-badge">{{ 'icon-checkmark.svg' | inline_asset_content }}</span>
-                    {%- endif -%}
-                  </h3>
+                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
-                {%- if block.settings.stars > 0 -%}
-                  <div class="rating-stars">
-                    {%- for i in (1..block.settings.stars) -%}
-                      <span class="rating-star">{{ 'icon-star.svg' | inline_asset_content }}</span>
-                    {%- endfor -%}
-                  </div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
@@ -443,21 +431,6 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
-        },
-        {
-          "type": "range",
-          "id": "stars",
-          "min": 0,
-          "max": 5,
-          "step": 1,
-          "default": 0,
-          "label": "Stars"
-        },
-        {
-          "type": "checkbox",
-          "id": "verified",
-          "default": false,
-          "label": "Verified Badge"
         }
       ]
     }
