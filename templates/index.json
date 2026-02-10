@@ -94,6 +94,7 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
+        "heading_alignment": "left",
         "enable_video_looping": false,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
@@ -163,132 +164,49 @@
         "show_text_below": true
       }
     },
-    "custom_liquid_wTaxwe": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "multicolumn_3r4rc8": {
-      "type": "multicolumn",
+    "hover_text_columns_6jpRwA": {
+      "type": "hover-text-columns",
       "blocks": {
-        "column_c99prB": {
-          "type": "column",
+        "text_column_AjrpwL": {
+          "type": "text_column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Bergamot",
+            "hover_text": "<p>Citrus, Zesty, Refreshing</p>"
           }
         },
-        "column_fNnbUU": {
-          "type": "column",
+        "text_column_AfneTz": {
+          "type": "text_column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Fresh Cut Grass",
+            "hover_text": "<p>Fresh Cut Grass, Citrus</p>"
           }
         },
-        "column_cwiYVY": {
-          "type": "column",
+        "text_column_VwDkKn": {
+          "type": "text_column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Sandalwood",
+            "hover_text": "<p>Woody, Sweet, Earthy</p>"
+          }
+        },
+        "text_column_ddPxFk": {
+          "type": "text_column",
+          "settings": {
+            "heading": "Musk",
+            "hover_text": "<p>Warm and sensual</p>"
           }
         }
       },
       "block_order": [
-        "column_c99prB",
-        "column_fNnbUU",
-        "column_cwiYVY"
+        "text_column_AjrpwL",
+        "text_column_AfneTz",
+        "text_column_VwDkKn",
+        "text_column_ddPxFk"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Hover Text Columns",
       "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "multicolumn_Q9n6ng": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_cLCkNE": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_9YPPbG": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_3c8DRc": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_cLCkNE",
-        "column_9YPPbG",
-        "column_3c8DRc"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "custom_liquid_mLC3h4": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
@@ -298,9 +216,6 @@
     "video_Ed9Waw",
     "rich_text_wDUgAa",
     "image_banner_nfNcMF",
-    "custom_liquid_wTaxwe",
-    "multicolumn_3r4rc8",
-    "multicolumn_Q9n6ng",
-    "custom_liquid_mLC3h4"
+    "hover_text_columns_6jpRwA"
   ]
 }
