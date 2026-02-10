@@ -137,6 +137,9 @@
         "text_YUkc8Q",
         "button_kRNkaX"
       ],
+      "custom_css": [
+        ".rich-text__heading a {color: #2e8b57; text-decoration: none;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -181,26 +184,26 @@
             "hover_text": "<p>Fresh Cut Grass, Citrus</p>"
           }
         },
+        "text_column_ddPxFk": {
+          "type": "text_column",
+          "settings": {
+            "heading": "Ozonic Notes",
+            "hover_text": "<p>Airy, Fresh, Revitalizing</p>"
+          }
+        },
         "text_column_VwDkKn": {
           "type": "text_column",
           "settings": {
             "heading": "Sandalwood",
             "hover_text": "<p>Woody, Sweet, Earthy</p>"
           }
-        },
-        "text_column_ddPxFk": {
-          "type": "text_column",
-          "settings": {
-            "heading": "Musk",
-            "hover_text": "<p>Warm and sensual</p>"
-          }
         }
       },
       "block_order": [
         "text_column_AjrpwL",
         "text_column_AfneTz",
-        "text_column_VwDkKn",
-        "text_column_ddPxFk"
+        "text_column_ddPxFk",
+        "text_column_VwDkKn"
       ],
       "name": "Hover Text Columns",
       "settings": {
