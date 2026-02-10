@@ -1,0 +1,103 @@
+{{ 'section-satisfied-customers.css' | asset_url | stylesheet_tag }}
+
+<div class="satisfied-customers page-width section-{{ section.id }}-padding">
+  {%- if section.settings.heading != blank -%}
+    <h2 class="satisfied-customers__heading center">{{ section.settings.heading | escape }}</h2>
+  {%- endif -%}
+
+  <div class="satisfied-customers__grid">
+    {%- for block in section.blocks -%}
+      <div class="satisfied-customers__card" {{ block.shopify_attributes }}>
+        <div class="satisfied-customers__header">
+          <span class="satisfied-customers__name">{{ block.settings.author }}</span>
+          <span class="satisfied-customers__verified-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon-verified">
+              <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+            </svg>
+          </span>
+        </div>
+        <div class="satisfied-customers__text rte">
+          {{ block.settings.text }}
+        </div>
+        <div class="satisfied-customers__rating">
+          {%- for i in (1..5) -%}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon-star">
+              <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+            </svg>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {%- if section.settings.button_label != blank -%}
+    <div class="center satisfied-customers__footer">
+      <a href="{{ section.settings.button_link }}" class="button button--primary">
+        {{ section.settings.button_label | escape }}
+      </a>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Satisfied Customers",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "SATISFIED CUSTOMERS",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "LEAVE A REVIEW",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "author",
+          "default": "Customer Name",
+          "label": "Author"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Review text goes here.</p>",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Satisfied Customers",
+      "blocks": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "review"
+        },
+        {
+          "type": "review"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

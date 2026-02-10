@@ -1,0 +1,152 @@
+.satisfied-customers {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.satisfied-customers__heading {
+    font-family: var(--font-heading-family);
+    /* Or serif if specific */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    /* Regular weight often looks better for serifs */
+}
+
+.satisfied-customers__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 1px solid black;
+}
+
+@media screen and (min-width: 750px) {
+    .satisfied-customers__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.satisfied-customers__card {
+    padding: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 750px) {
+    .satisfied-customers__card {
+        border-bottom: none;
+        border-right: 1px solid black;
+    }
+
+    .satisfied-customers__card:last-child {
+        border-right: none;
+    }
+}
+
+/* Header: Name + Icon */
+.satisfied-customers__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    color: #008000;
+    /* Green color */
+    font-style: italic;
+    font-family: serif;
+    /* Enforce serif for names */
+    font-size: 2rem;
+}
+
+.satisfied-customers__name {
+    font-weight: bold;
+}
+
+.satisfied-customers__verified-icon .icon-verified {
+    width: 2rem;
+    height: 2rem;
+    color: #008000;
+}
+
+/* Review Text */
+.satisfied-customers__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: rgb(var(--color-foreground));
+    font-family: serif;
+    /* Design looks like serif */
+}
+
+/* Stars */
+.satisfied-customers__rating {
+    margin-top: auto;
+    color: #008000;
+    display: flex;
+    gap: 0.5rem;
+    transform: rotate(-5deg);
+    /* Slight rotation like in the design? Actually design curves them. Hard to do simple curve with flex. Just simple row for now. Actually, let's look closer. They are arranged in an arc. That's complex CSS. I'll stick to a straight line for MVP unless user complains, or maybe just flex with transform on each star? Let's keep it simple first: straight line. 
+  Wait, the design has them in an arc.
+  Let's try to simulate the arc simply by transforming individual stars? No, that's tedious.
+  I'll just do a straight row of stars for now.
+  */
+}
+
+.satisfied-customers__rating .icon-star {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+}
+
+/* Slight arc attempt if easy?
+   Start 1: rotate(-10deg) translateY(5px)
+   Star 2: rotate(-5deg) translateY(2px)
+   Star 3: translateY(0)
+   Star 4: rotate(5deg) translateY(2px)
+   Star 5: rotate(10deg) translateY(5px)
+*/
+
+.satisfied-customers__rating .icon-star:nth-child(1) {
+    transform: rotate(-15deg) translateY(5px);
+}
+
+.satisfied-customers__rating .icon-star:nth-child(2) {
+    transform: rotate(-7deg) translateY(1px);
+}
+
+.satisfied-customers__rating .icon-star:nth-child(3) {
+    transform: translateY(-2px);
+}
+
+.satisfied-customers__rating .icon-star:nth-child(4) {
+    transform: rotate(7deg) translateY(1px);
+}
+
+.satisfied-customers__rating .icon-star:nth-child(5) {
+    transform: rotate(15deg) translateY(5px);
+}
+
+
+.satisfied-customers__footer {
+    margin-top: 5rem;
+}
+
+.satisfied-customers__footer .button {
+    background-color: #008000;
+    border: none;
+    color: white;
+    border-radius: 0;
+    /* Square buttons? Design looks squareish/rectangular */
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+}
+
+.satisfied-customers__footer .button:hover {
+    background-color: #006400;
+    /* Darker green */
+}
