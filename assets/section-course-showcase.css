@@ -1,0 +1,133 @@
+.course-showcase {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Heading */
+.course-showcase__heading-container {
+    margin-bottom: 6rem;
+}
+
+.course-showcase__heading {
+    font-family: var(--font-heading-family);
+    /* Use Serif if font-heading-family is not serif, assuming user wants design match which looks serif */
+    font-family: Times New Roman, Times, serif;
+    /* Fallback/Forced serif as per design look */
+    font-size: 3.6rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+.course-showcase__heading em {
+    font-style: normal;
+    color: #008000;
+    /* Green highlight */
+}
+
+/* Grid */
+.course-showcase__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6rem;
+    /* Vertical gap on mobile */
+    padding-top: 3rem;
+    /* Space for overlapping icons */
+}
+
+@media screen and (min-width: 750px) {
+    .course-showcase__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Card */
+.course-showcase__card {
+    position: relative;
+    border: 1px solid black;
+    padding: 6rem 2rem 4rem;
+    /* Top padding for icon space */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    /* Ensure content covers background if needed */
+}
+
+/* Icon */
+.course-showcase__icon-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0 1rem;
+    /* Clear line behind it if we used border-top, but we use full border */
+    /* Actually design uses a circle around icon that sits on the border */
+}
+
+.course-showcase__icon {
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.course-showcase__icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: black;
+}
+
+/* Content */
+.course-showcase__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.course-showcase__card-title {
+    font-family: Times New Roman, Times, serif;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.course-showcase__card-text {
+    font-family: serif;
+    /* Design looks serif for body too or very clean sans */
+    font-family: var(--font-body-family);
+    /* Let's stick to base font for readability unless specified */
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: rgb(var(--color-foreground));
+    flex-grow: 1;
+    /* Push button down */
+}
+
+.course-showcase__button.button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    padding: 1rem 2rem;
+    min-height: auto;
+    font-style: italic;
+    /* "LEARN MORE" looks italic in screenshot */
+    font-family: serif;
+}

@@ -248,6 +248,53 @@
         "button_label": "LEAVE A REVIEW",
         "button_link": ""
       }
+    },
+    "course_showcase_MdxWXG": {
+      "type": "course-showcase",
+      "blocks": {
+        "feature_9zeyta": {
+          "type": "feature",
+          "settings": {
+            "icon": "location",
+            "custom_icon": "",
+            "title": "PRO SHOP SHOWCASE",
+            "text": "<p>Offer On The Green right where players shop an exclusive fragrance at your course.</p>",
+            "link_label": "LEARN MORE",
+            "link_url": ""
+          }
+        },
+        "feature_bz8QKR": {
+          "type": "feature",
+          "settings": {
+            "icon": "document",
+            "custom_icon": "",
+            "title": "LOCKER ROOM LUXURY",
+            "text": "<p>Enhance your club’s amenities with a signature fragrance experience in your locker rooms.</p>",
+            "link_label": "LEARN MORE",
+            "link_url": ""
+          }
+        },
+        "feature_xJhAhf": {
+          "type": "feature",
+          "settings": {
+            "icon": "gift",
+            "custom_icon": "",
+            "title": "TOURNAMENT & MEMBER GIFTS",
+            "text": "<p>Celebrate your players with a premium gift that’s thoughtful, memorable, and made for the game.</p>",
+            "link_label": "LEARN MORE",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_9zeyta",
+        "feature_bz8QKR",
+        "feature_xJhAhf"
+      ],
+      "name": "Course Showcase",
+      "settings": {
+        "heading": "<p>BRING <em>ON THE GREEN FOR MEN</em><br/>TO YOUR COURSE</p>"
+      }
     }
   },
   "order": [
@@ -257,6 +304,7 @@
     "rich_text_wDUgAa",
     "image_banner_nfNcMF",
     "hover_text_columns_6jpRwA",
-    "satisfied_customers_LEqRW9"
+    "satisfied_customers_LEqRW9",
+    "course_showcase_MdxWXG"
   ]
 }
